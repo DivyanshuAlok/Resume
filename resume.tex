@@ -39,27 +39,22 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
-}
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeSubItem}[2]{ \resumeItem{#1}{#2}\vspace{-4pt} }
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -75,21 +70,21 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Divyanshu Alok}} & Email : {divyanshuncs@gmail.com}\\
- & Mobile : +91-7798805229 \\
-   \href{www.linkedin.com/in/divyanshu-alok}{www.linkedin.com/in/divyanshu-alok}& GitHub : /DivyanshuAlok \\
+\textbf{{\Large Divyanshu Alok}} & Email : {divyanshuncs@gmail.com}\\
+& Mobile : +91-7798805229 \\
+\href{www.linkedin.com/in/divyanshu-alok}{www.linkedin.com/in/divyanshu-alok}& GitHub : /DivyanshuAlok \\
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Chaitanya Bharathi Institute Of Technology}{Hyderabad, TS}
-      {Bachelor of Technology in Information Technology;  GPA: 6.20}{2016 - 2020}
-    \resumeSubheading
-      {Navy Children School}{Port Blair, A\&N}
-      {Intermediate;  Percentage : 84}{2013 - 2015}
+  \resumeSubheading
+  {Chaitanya Bharathi Institute Of Technology}{Hyderabad, TS}
+  {Bachelor of Technology in Information Technology;  GPA: 6.20}{2016 - 2020}
+  \resumeSubheading
+  {Navy Children School}{Port Blair, A\&N}
+  {Intermediate;  Percentage : 84}{2013 - 2015}
   \resumeSubHeadingListEnd
 
 
@@ -97,71 +92,74 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-\resumeSubheading
-      {LTIMindtree}{Hyderabad, Talengana}
-      {Senior Software Engineer}{Oct 2020 - Present}
-      \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-      \resumeItemListEnd
+  \resumeSubheading
+	  {LTIMindtree}{Hyderabad, Talengana}
+	  {Senior Software Engineer}{Oct 2020 - Present}
+	  \resumeItemListStart
+		  \resumeItem{Braio}{BRAIO is a Service Automation solution based on JBPM that includes Automation of Runbook, Workflow Management.}
+		  \resumeItemListStart
+			  \resumeItem{Automated VM Provisioning}
+			  {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
+			  \resumeItemListEnd
+		  \resumeItem{Apache Beam}
+		  {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+	  \resumeItemListEnd
 
-    \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 - Present}
-      \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Google}{Mountain View, CA}
+    {Software Engineer}{Oct 2016 - Present}
+    \resumeItemListStart
+      \resumeItem{Tensorflow}
+      {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
+      \resumeItem{Apache Beam}
+      {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Protron Technologies}{Hyderabad, Talengana}
-      {Mobile Application Developer}{June 2020 - July 2020}
-      \resumeItemListStart
-        \resumeItem{Feazy - Contactless Dining}
-          {Developed a cross-platform mobile application using React-Native with a payment gateway, allowing customers to order food from a food court within minutes and reduce waiting time considerably.}
-        \resumeItem{Technology Stack}
-          {React-Native, Firebase (PostGIS)}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Protron Technologies}{Hyderabad, Talengana}
+    {Mobile Application Developer}{June 2020 - July 2020}
+    \resumeItemListStart
+      \resumeItem{Feazy - Contactless Dining}
+      {Developed a cross-platform mobile application using React-Native with a payment gateway, allowing customers to order food from a food court within minutes and reduce waiting time considerably.}
+      \resumeItem{Technology Stack}
+      {React-Native, Firebase (PostGIS)}
+    \resumeItemListEnd
 
 
-    \resumeSubheading
-      {Protron Technologies}{Hyderabad, Talengana}
-      {Mobile Application Developer}{June 2019 - Aug 2019}
-      \resumeItemListStart
-        \resumeItem{Feazy - Contactless Dining}
-          {Developed a cross-platform mobile application using React-Native with a payment gateway, allowing customers to order food from a food court within minutes and reduce waiting time considerably.}
-        \resumeItem{Technology Stack}
-          {React-Native, Firebase (PostGIS)}
-      \resumeItemListEnd
+  \resumeSubheading
+    {AONE Apps}{Hyderabad, Talengana}
+    {Mobile Application Developer}{June 2019 - Aug 2019}
+    \resumeItemListStart
+      \resumeItem{AONE : Nextgen Ridesharing}
+      {Developed a comparable iOS app for an Android app already in use with  the intention to shift the technological stack from platform-native codebase  to one with a singular codebase.}
+      \resumeItem{Technology Stack}
+      {React-Native, Firebase (PostGIS)}
+    \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Adverse Road Condition Map}
-      {Map based application to alert the user regarding potholes and speed bumps. The data is collected by the user itself.(Smart India Hackathon 2019 Problem statement, given by ARAI)}
-    \resumeSubItem{Spam detection and sentiment analysis}
-      {Application based on Machine Learning using python to detect spam set of texts and further perform sentiment analysis. Tested on the Twitter data set.}
-    \resumeSubItem{Parent Pal}
-      {Cross-platform mobile application to monitor application usage of target device (ios or android).}
+\resumeSubHeadingListStart
+\resumeSubItem{Adverse Road Condition Map}
+{Map based application to alert the user regarding potholes and speed bumps. The data is collected by the user itself.(Smart India Hackathon 2019 Problem statement, given by ARAI)}
+\resumeSubItem{Spam detection and sentiment analysis}
+{Application based on Machine Learning using python to detect spam set of texts and further perform sentiment analysis. Tested on the Twitter data set.}
+\resumeSubItem{Parent Pal}
+{Cross-platform mobile application to monitor application usage of target device (ios or android).}
 %     \resumeSubItem{Mac Setup}
 %       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
- \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 \resumeSubItem{Technologies}{ ServiceNow Orchestration (Workflow Automation) , Power Automate, React-Native, React-js, Power Apps, Runbook Automation.}
 \resumeSubItem{Languages}{: Python, Javascript, Powershell, C++, SQL, Bash}
-   
- \resumeSubHeadingListEnd
+
+\resumeSubHeadingListEnd
 
 
 %-------------------------------------------
